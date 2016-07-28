@@ -106,8 +106,10 @@
         }
       }
 
-      if( location.hash == '#typeform' ) {
-        document.getElementById('typeform').click();
+      window.onload = function() {
+        if( location.hash == '#typeform' ) {
+          document.getElementById('typeform').click();
+        }
       }
     </script>
   </body>
