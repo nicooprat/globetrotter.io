@@ -284,3 +284,16 @@ svg {
     pointer-events: none;
     width: 5px;
 }
+
+#drift-widget-container {
+  animation: drift .5s 3s both;
+
+  @keyframes drift {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
