@@ -12,20 +12,16 @@ svg {
 
 .wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
@@ -112,7 +108,7 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .05;
+  opacity: .18;
   pointer-events: none; }
   @media (max-width: 480px) {
     .clouds {
@@ -227,7 +223,6 @@ svg {
   .form form {
     max-width: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     background-color: white;
@@ -249,7 +244,6 @@ svg {
     letter-spacing: 0.5px; }
   .form .submit {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     background-color: #0072aa;
