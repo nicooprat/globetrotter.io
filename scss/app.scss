@@ -1,4 +1,4 @@
-$blue: #0072aa;
+$blue: #1377ee;
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@ $blue: #0072aa;
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #eff6f9;
+  background-color: mix(white, $blue, 90);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -87,7 +87,7 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .18;
+  opacity: .05;
   pointer-events: none;
 
   @media (max-width: 480px) {
@@ -253,7 +253,7 @@ svg {
 
       &:hover,
       &:focus {
-        color: white;
+        color: mix(black, $blue, 50);
       }
     }
   }
