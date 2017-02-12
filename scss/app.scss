@@ -2,17 +2,22 @@ $blue: #1377ee;
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: mix(white, $blue, 90);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: $blue;
+  color: white;
+}
+
 svg {
   display: block;
+
+  path {
+    fill: currentColor
+  }
 }
 
 .wrapper {
@@ -87,7 +92,7 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .05;
+  opacity: .1;
   pointer-events: none;
 
   @media (max-width: 480px) {
@@ -155,16 +160,11 @@ svg {
   width: 20em;
   max-width: 90%;
   margin: 0 auto 10px;
-
-  > path {
-    fill: $blue;
-  }
 }
 
 .desc {
   font-size: 1.25em;
   font-weight: 600;
-  color: $blue;
   text-align: center;
   margin: 0;
 
@@ -188,7 +188,6 @@ svg {
   position: relative; // Avoid screencast shadow
 
   h2 {
-    color: $blue;
     margin-top: 0;
 
     @media (max-width: 400px) {
@@ -243,7 +242,6 @@ svg {
   }
 
   p {
-    color: $blue;
     font-weight: bold;
 
     a {
