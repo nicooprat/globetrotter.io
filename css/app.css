@@ -29,7 +29,12 @@ svg {
           align-items: center;
   min-height: 100vh;
   padding: 2%;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms; }
+  body.is-loaded .wrapper {
+    opacity: 1; }
   @media (max-width: 520px) {
     .wrapper {
       background-image: url(../img/bg-small.jpg);
@@ -203,8 +208,10 @@ svg {
       font-size: 1em; } }
 
 .screencast {
-  max-width: 100%;
+  width: 100%;
+  max-width: 640px;
   height: auto;
+  background-color: white;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1vw 10vw rgba(0, 0, 0, 0.3);
   border-radius: 3px;
@@ -238,6 +245,7 @@ svg {
   .form .email {
     width: 100%;
     background: white;
+    color: black;
     padding-right: 10px;
     padding: .5em 1.25em;
     letter-spacing: 0.5px; }

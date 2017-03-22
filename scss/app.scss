@@ -29,6 +29,12 @@ svg {
   min-height: 100vh;
   padding: 2%;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 250ms;
+
+  body.is-loaded & {
+    opacity: 1;
+  }
 
   @media (max-width: 520px) {
     background-image: url(../img/bg-small.jpg);
@@ -174,8 +180,10 @@ svg {
 }
 
 .screencast {
-  max-width: 100%;
+  width: 100%;
+  max-width: 640px;
   height: auto;
+  background-color: white;
   box-shadow: 0 2px 20px rgba(black, .3);
   box-shadow: 0 1vw 10vw rgba(black, .3);
   border-radius: 3px;
@@ -216,6 +224,7 @@ svg {
   .email {
     width: 100%;
     background: white;
+    color: black;
     padding-right: 10px;
     padding: .5em 1.25em;
     letter-spacing: 0.5px;
