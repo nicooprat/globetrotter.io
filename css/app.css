@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -29,12 +30,7 @@ svg {
           align-items: center;
   min-height: 100vh;
   padding: 2%;
-  overflow: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms; }
-  body.is-loaded .wrapper {
-    opacity: 1; }
+  overflow: hidden; }
   @media (max-width: 520px) {
     .wrapper {
       background-image: url(../img/bg-small.jpg);
@@ -212,10 +208,15 @@ svg {
   max-width: 640px;
   height: auto;
   background-color: white;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1vw 10vw rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1vw 10vw rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1vw 10vw rgba(0, 0, 0, 0.5);
   border-radius: 3px;
-  margin: 40px auto; }
+  overflow: hidden;
+  margin: 40px auto;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
 
 .form {
   text-align: center;

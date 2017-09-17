@@ -78,7 +78,9 @@
         Inspirez-vous de ceux des autres.
       </p>
 
-      <video id="screencast" class="screencast" autoplay loop muted webkit-playsinline></video>
+      <div class="screencast">
+        <div style="width:100%;height:0px;position:relative;padding-bottom:67.669%;"><iframe src="https://streamable.com/s/jebxt/onsgzu?autoplay=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+      </div>
       
       <div class="form">
         <form class="form" action="//globetrotter.us4.list-manage.com/subscribe/post?u=e828b3565f539dc6291b13a23&amp;id=2525befff6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
@@ -106,33 +108,6 @@
     </div>
     
     <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-
-    <script>
-      var req = new XMLHttpRequest()
-
-      req.onreadystatechange = function(event) {
-        if (this.readyState === XMLHttpRequest.DONE) {
-          if (this.status === 200) {
-            var data = JSON.parse(this.responseText)
-            var infos = ( window.innerWidth < 600 ) ? data.files['mp4-mobile'] : data.files['mp4']
-            var poster = data.thumbnail_url.replace('http:', '')
-            var video = document.querySelector('video')
-            video.setAttribute('src', infos.url)
-            video.setAttribute('width', infos.width)
-            video.setAttribute('height', infos.height)
-            video.setAttribute('poster', poster)
-            document.body.className = 'is-loaded'
-          }
-        }
-      }
-
-      req.open('GET', 'https://api.streamable.com/videos/jebxt', true)
-      req.send(null)
-
-      setTimeout(function() {
-        document.body.className = 'is-loaded'
-      }, 500)
-    </script>
 
     <script>
       // https://github.com/bfred-it/iphone-inline-video

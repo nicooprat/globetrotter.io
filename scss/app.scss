@@ -29,12 +29,6 @@ svg {
   min-height: 100vh;
   padding: 2%;
   overflow: hidden;
-  opacity: 0;
-  transition: opacity 250ms;
-
-  body.is-loaded & {
-    opacity: 1;
-  }
 
   @media (max-width: 520px) {
     background-image: url(../img/bg-small.jpg);
@@ -184,10 +178,12 @@ svg {
   max-width: 640px;
   height: auto;
   background-color: white;
-  box-shadow: 0 2px 20px rgba(black, .3);
-  box-shadow: 0 1vw 10vw rgba(black, .3);
+  box-shadow: 0 2px 20px rgba(black, .5);
+  box-shadow: 0 1vw 10vw rgba(black, .5);
   border-radius: 3px;
+  overflow: hidden;
   margin: 40px auto;
+  transform: translate3d(0,0,0); // fix border-radius
 }
 
 .form {
