@@ -115,7 +115,7 @@
           if (this.status === 200) {
             var data = JSON.parse(this.responseText)
             var infos = ( window.innerWidth < 600 ) ? data.files['mp4-mobile'] : data.files['mp4']
-            var poster = data.thumbnail_url
+            var poster = data.thumbnail_url.replace('http:', '')
             var video = document.querySelector('video')
             video.setAttribute('src', infos.url)
             video.setAttribute('width', infos.width)
